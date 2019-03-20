@@ -1,0 +1,8 @@
+def f(x):
+  return 4 * x + 2
+string = """ 
+# result_F for JD from matlab
+ """
+string_split = string.split(";")
+for i in range(0,500):
+  print(string_split[f(i)].split("=")[1])
